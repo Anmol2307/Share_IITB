@@ -1,0 +1,1 @@
+A Django app for sharing files related to courses of various departments within IIT Bombay.
