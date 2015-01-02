@@ -15,6 +15,7 @@ SETTINGS_DIR = os.path.dirname(__file__)
 
 PROJECT_PATH = os.path.join(SETTINGS_DIR, os.pardir)
 PROJECT_PATH = os.path.abspath(PROJECT_PATH)
+TEMPLATE_PATH = os.path.join(PROJECT_PATH, 'templates')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
@@ -29,6 +30,9 @@ TEMPLATE_DEBUG = True
 
 ALLOWED_HOSTS = []
 
+TEMPLATE_DIRS = (
+    TEMPLATE_PATH,
+)
 
 # Application definition
 

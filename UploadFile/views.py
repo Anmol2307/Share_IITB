@@ -12,6 +12,7 @@ def add_document(request):
   context = RequestContext(request)
 
   if request.method == 'POST':
+    print "Then I came here"
     form = DocumentForm(request.POST)
     if form.is_valid():
       form.save(commit=True)
@@ -19,5 +20,6 @@ def add_document(request):
     else:
       print form.errors
   else:
+    print "I was here"
     form = DocumentForm()
   return render_to_response('UploadFile/upload_file.html',{'form':form},context)

@@ -6,6 +6,6 @@ class Document(models.Model):
   course_code = models.CharField(max_length=24, null=False)
   category = models.CharField(max_length=24)
   year = models.IntegerField()
-  prof = models.CharField(max_length=100, null=True)
+  professor = models.CharField(max_length=100, null=True)
   description = models.CharField(max_length=1000)
   docfile = models.FileField(upload_to='documents/%Y/%m/%d')
